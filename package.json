@@ -16,7 +16,7 @@
     "start": "./node_modules/.bin/gulp server",
     "clean": "./node_modules/.bin/gulp clean",
     "build": "./node_modules/.bin/gulp build",
-    "upload": "./scripts/upload"
+    "deploy": "cd dist && git add --all && git commit -m \"Release at $(date)\" && git push"
   },
   "homepage": "https://github.com/mitcdh/ui-driver-scaleway#readme",
   "devDependencies": {
