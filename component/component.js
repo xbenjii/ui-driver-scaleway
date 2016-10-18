@@ -10,7 +10,13 @@ define('ui/components/machine/driver-%%DRIVERNAME%%/component', ['exports', 'emb
     bootstrap: function() {
       let config = this.get('store').createRecord({
         type        : '%%DRIVERNAME%%Config',
-        size        : 512,
+        commercialType: 'VC1S',
+        debug: false,
+        image: 'ubuntu-xenial',
+        ip: '',
+        organization: '',
+        token: '',
+        volumes: ''
       });
 
       this.set('model', this.get('store').createRecord({
@@ -24,14 +30,6 @@ define('ui/components/machine/driver-%%DRIVERNAME%%/component', ['exports', 'emb
       // Get generic API validation errors
       this._super();
       var errors = this.get('errors')||[];
-
-      // Add more specific errors
-
-      // Check something and add an error entry if it fails:
-      if ( parseInt(this.get('model.%%DRIVERNAME%%Config.size'),10) < 1024 )
-      {
-        errors.push('Size must be at least 1024 MB');
-      }
 
       // Set the array of errors for display,
       // and return true if saving should continue.

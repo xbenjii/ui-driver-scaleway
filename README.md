@@ -1,5 +1,5 @@
-# ui-driver-skel
-Skeleton Rancher UI driver for custom docker-machine drivers
+# ui-driver-scaleway
+Rancher UI driver for scaleway docker-machine driver
 
 ## Setup
 

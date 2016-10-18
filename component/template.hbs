@@ -1,25 +1,91 @@
 <section class="horizontal-form">
   <div class="container-fluid">
-    {{!-- This partial contains the quantity, name, and description fields --}}
     {{partial "host/add-common"}}
 
     <div class="over-hr r-mt20 r-mb20">
-      <span>My Skeleton Driver</span>
+      <span>Scaleway</span>
     </div>
 
-    {{!-- An example input option --}}
-    <div class="row">
-      <div class="col-sm-12 col-md-2 form-label">
-        <label class="form-control-static">Size</label>
+    <div class="over-hr r-mt20 r-mb20">
+      <span>API Access</span>
+    </div>
+    <div class="row form-group">
+      <div class="col-md-2 form-label">
+        <label class="form-control-static">Organization</label>
       </div>
-      <div class="col-sm-12 col-md-4">
-        <div class="input-group">
+      <div class="col-md-4">
           {{input type="text"
             class="form-control"
-            value=model.%%DRIVERNAME%%Config.size
+            value=model.%%DRIVERNAME%%Config.organization
           }}
-          <span class="input-group-addon">MB</span>
-        </div>
+      </div>
+      <div class="col-md-2 form-label">
+        <label class="form-control-static">Token</label>
+      </div>
+      <div class="col-md-4">
+          {{input type="text"
+            class="form-control"
+            value=model.%%DRIVERNAME%%Config.token
+          }}
+      </div>
+    </div>
+
+    <div class="over-hr r-mt20 r-mb20">
+      <span>Instance</span>
+    </div>
+    <div class="row form-group">
+      <div class="col-md-2 form-label">
+        <label class="form-control-static">Image</label>
+      </div>
+      <div class="col-md-4">
+          {{input type="text"
+            class="form-control"
+            value=model.%%DRIVERNAME%%Config.image
+          }}
+      </div>
+      <div class="col-md-2 form-label">
+        <label class="form-control-static">Type</label>
+      </div>
+      <div class="col-md-4">
+          {{input type="text"
+            class="form-control"
+            value=model.%%DRIVERNAME%%Config.commercialType
+          }}
+      </div>
+    </div>
+    <div class="row form-group">
+      <div class="col-md-2 form-label">
+        <label class="form-control-static">IP Address</label>
+      </div>
+      <div class="col-md-4">
+          {{input type="text"
+            class="form-control"
+            value=model.%%DRIVERNAME%%Config.ip
+          }}
+      </div>
+      <div class="col-md-2 form-label">
+        <label class="form-control-static">Additional Volumes</label>
+      </div>
+      <div class="col-md-4">
+          {{input type="text"
+            class="form-control"
+            placeholder="Attach additional volume (e.g., 50G)"
+            value=model.%%DRIVERNAME%%Config.volumes
+          }}
+      </div>
+    </div>
+
+    <div class="over-hr r-mt20 r-mb20">
+      <span>Debug</span>
+    </div>
+    <div class="row form-group">
+      <div class="col-md-2 form-label">
+        <label class="form-control-static">Enable Debugging</label>
+      </div>
+      <div class="col-md-4">
+          {{input type="checkbox"
+            checked=model.%%DRIVERNAME%%Config.debug
+          }}
       </div>
     </div>
 
