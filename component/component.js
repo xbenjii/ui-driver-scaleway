@@ -19,8 +19,14 @@ define('ui/components/machine/driver-%%DRIVERNAME%%/component', ['exports', 'emb
         volumes: ''
       });
 
+      let type = 'host';
+
+      if (!this.get('useHost')) {
+        type = 'machine';
+      }
+
       this.set('model', this.get('store').createRecord({
-        type: 'machine',
+        type: type,
         '%%DRIVERNAME%%Config': config,
       }));
     },
