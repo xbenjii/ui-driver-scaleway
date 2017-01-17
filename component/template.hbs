@@ -12,6 +12,7 @@
       <div class="col-md-4">
           {{input type="text"
             class="form-control"
+            placeholder="Scaleway Organization ID"
             value=model.%%DRIVERNAME%%Config.organization
           }}
       </div>
@@ -21,6 +22,7 @@
       <div class="col-md-4">
           {{input type="text"
             class="form-control"
+            placeholder="Scaleway API Token"
             value=model.%%DRIVERNAME%%Config.token
           }}
       </div>
@@ -36,6 +38,7 @@
       <div class="col-md-4">
           {{input type="text"
             class="form-control"
+            placeholder="Specify the image"
             value=model.%%DRIVERNAME%%Config.image
           }}
       </div>
@@ -45,18 +48,20 @@
       <div class="col-md-4">
           {{input type="text"
             class="form-control"
+            placeholder="Specify the commercial type"
             value=model.%%DRIVERNAME%%Config.commercialType
           }}
       </div>
     </div>
     <div class="row form-group">
       <div class="col-md-2 form-label">
-        <label class="form-control-static">IP Address</label>
+        <label class="form-control-static">Region</label>
       </div>
       <div class="col-md-4">
           {{input type="text"
             class="form-control"
-            value=model.%%DRIVERNAME%%Config.ip
+            placeholder="Specify the location (par1,ams1)"
+            value=model.%%DRIVERNAME%%Config.region
           }}
       </div>
       <div class="col-md-2 form-label">
@@ -70,10 +75,31 @@
           }}
       </div>
     </div>
+    <div class="row form-group">
+         <div class="col-md-2 form-label">
+           <label class="form-control-static">IP Address</label>
+         </div>
+         <div class="col-md-4">
+             {{input type="text"
+               class="form-control"
+               placeholder="Optionally specify the IP Address"
+               value=model.%%DRIVERNAME%%Config.ip
+             }}
+         </div>
+         <div class="col-md-2 form-label">
+           <label class="form-control-static">IPv6</label>
+         </div>
+         <div class="col-md-4">
+             {{input type="checkbox"
+               value=model.%%DRIVERNAME%%Config.ipv6
+             }}
+         </div>
+    </div>
 
     <div class="over-hr r-mt20 r-mb20">
       <span>Debug</span>
     </div>
+   
     <div class="row form-group">
       <div class="col-md-2 form-label">
         <label class="form-control-static">Enable Debugging</label>

@@ -11,9 +11,11 @@ define('ui/components/machine/driver-%%DRIVERNAME%%/component', ['exports', 'emb
       let config = this.get('store').createRecord({
         type        : '%%DRIVERNAME%%Config',
         commercialType: 'VC1S',
+        region: '',
         debug: false,
         image: 'ubuntu-xenial',
         ip: '',
+        ipv6: false,
         organization: '',
         token: '',
         volumes: ''
