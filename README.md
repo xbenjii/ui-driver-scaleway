@@ -23,3 +23,7 @@ A release is published to the [GitHub Project Page](https://mitcdh.github.io/ui-
   * Custom UI URL: [component.js](https://mitcdh.github.io/ui-driver-scaleway/dist/component.js)
 2. Wait for the driver to become "Active"
 3. In Rancher go to (Infrastructure -> Hosts -> Add Host) and the Scaleway driver and custom UI should show up.
+
+## Credits
+* [scaleway/docker-machine-driver-scaleway](https://github.com/scaleway/docker-machine-driver-scaleway)
+* [rancher/ui-driver-skel](https://github.com/rancher/ui-driver-skel)
