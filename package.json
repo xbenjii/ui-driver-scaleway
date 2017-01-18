@@ -10,7 +10,7 @@
   "author": "Mitchell Hewes",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/rancher/rancher/issues"
+    "url": "https://github.com/mitcdh/ui-driver-scaleway/issues"
   },
   "scripts": {
     "start": "./node_modules/.bin/gulp server",
