@@ -466,7 +466,7 @@ exports["default"] = Ember.HTMLBars.template((function() {
       ["inline","input",[],["type","text","class","form-control","placeholder","Specify the location (par1,ams1)","value",["subexpr","@mut",[["get","model.scalewayConfig.region",["loc",[null,[64,18],[64,45]]],0,0,0,0]],[],[],0,0]],["loc",[null,[61,10],[65,12]]],0,0],
       ["inline","input",[],["type","text","class","form-control","placeholder","Attach additional volume (e.g., 50G)","value",["subexpr","@mut",[["get","model.scalewayConfig.volumes",["loc",[null,[74,18],[74,46]]],0,0,0,0]],[],[],0,0]],["loc",[null,[71,10],[75,12]]],0,0],
       ["inline","input",[],["type","text","class","form-control","placeholder","Optionally specify the IP Address","value",["subexpr","@mut",[["get","model.scalewayConfig.ip",["loc",[null,[86,21],[86,44]]],0,0,0,0]],[],[],0,0]],["loc",[null,[83,13],[87,15]]],0,0],
-      ["inline","input",[],["type","checkbox","value",["subexpr","@mut",[["get","model.scalewayConfig.ipv6",["loc",[null,[94,21],[94,46]]],0,0,0,0]],[],[],0,0]],["loc",[null,[93,13],[95,15]]],0,0],
+      ["inline","input",[],["type","checkbox","checked",["subexpr","@mut",[["get","model.scalewayConfig.ipv6",["loc",[null,[94,23],[94,48]]],0,0,0,0]],[],[],0,0]],["loc",[null,[93,13],[95,15]]],0,0],
       ["inline","input",[],["type","checkbox","checked",["subexpr","@mut",[["get","model.scalewayConfig.debug",["loc",[null,[109,20],[109,46]]],0,0,0,0]],[],[],0,0]],["loc",[null,[108,10],[110,12]]],0,0],
       ["inline","partial",["host/add-options"],[],["loc",[null,[115,4],[115,34]]],0,0],
       ["inline","top-errors",[],["errors",["subexpr","@mut",[["get","errors",["loc",[null,[119,22],[119,28]]],0,0,0,0]],[],[],0,0]],["loc",[null,[119,2],[119,30]]],0,0],
