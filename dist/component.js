@@ -203,7 +203,7 @@ exports["default"] = Ember.HTMLBars.template((function() {
       dom.appendChild(el4, el5);
       var el5 = dom.createElement("label");
       dom.setAttribute(el5,"class","form-control-static");
-      var el6 = dom.createTextNode("Name");
+      var el6 = dom.createTextNode("Instance Name");
       dom.appendChild(el5, el6);
       dom.appendChild(el4, el5);
       var el5 = dom.createTextNode("\n      ");
