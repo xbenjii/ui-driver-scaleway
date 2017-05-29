@@ -12,6 +12,7 @@ define('ui/components/machine/driver-%%DRIVERNAME%%/component', ['exports', 'emb
         type        : '%%DRIVERNAME%%Config',
         commercialType: 'VC1S',
         region: '',
+        name: '',
         debug: false,
         image: 'ubuntu-xenial',
         ip: '',
