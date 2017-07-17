@@ -20,9 +20,14 @@ A release is published to the [GitHub Project Page](https://mitcdh.github.io/ui-
 
 1. Add a Machine Driver in Rancher (Admin tab -> Settings -> Machine Drivers)
   * Download URL: The URL for the `linux_amd64.tar.gz` driver binary from [https://github.com/scaleway/docker-machine-driver-scaleway/releases](https://github.com/scaleway/docker-machine-driver-scaleway/releases)
-  * Custom UI URL: [https://cdn.rawgit.com/mitcdh/ui-driver-scaleway/master/dist/component.js](https://cdn.rawgit.com/mitcdh/ui-driver-scaleway/master/dist/component.js)
+  * Custom UI URL: [https://mitcdh.github.io/ui-driver-scaleway/dist/component.js](https://mitcdh.github.io/ui-driver-scaleway/dist/component.js)
 2. Wait for the driver to become "Active"
 3. In Rancher go to (Infrastructure -> Hosts -> Add Host) and the Scaleway driver and custom UI should show up.
+
+## Alternative UI URLs
+These are just for reference as an alternative if there is a problem with GH Pages. Rancher seems to require a correct Content-Type for the .svg logo so directly accessing the raw files on github will not work as intended.
+
+* [https://cdn.rawgit.com/mitcdh/ui-driver-scaleway/master/dist/component.js](https://cdn.rawgit.com/mitcdh/ui-driver-scaleway/master/dist/component.js)
 
 ## Credits
 * [scaleway/docker-machine-driver-scaleway](https://github.com/scaleway/docker-machine-driver-scaleway)
