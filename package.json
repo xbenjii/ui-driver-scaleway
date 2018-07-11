@@ -2,7 +2,12 @@
   "name": "ui-driver-scaleway",
   "version": "0.0.2",
   "description": "Rancher UI driver for Scaleway",
-  "scripts": {},
+  "scripts": {
+    "start": "./node_modules/.bin/gulp server",
+    "clean": "./node_modules/.bin/gulp clean",
+    "build": "./node_modules/.bin/gulp build",
+    "deploy": "git commit -m \"Release at $(date)\" -- dist && git push"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mitcdh/ui-driver-scaleway.git"
@@ -11,12 +16,6 @@
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/mitcdh/ui-driver-scaleway/issues"
-  },
-  "scripts": {
-    "start": "./node_modules/.bin/gulp server",
-    "clean": "./node_modules/.bin/gulp clean",
-    "build": "./node_modules/.bin/gulp build",
-    "deploy": "git commit -m \"Release at $(date)\" -- dist && git push"
   },
   "homepage": "https://github.com/mitcdh/ui-driver-scaleway#readme",
   "devDependencies": {

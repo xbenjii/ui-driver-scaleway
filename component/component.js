@@ -1,9 +1,20 @@
 /* v----- Do not change anything between here
  *       (the DRIVERNAME placeholder will be automatically replaced during build) */
-define('ui/components/machine/driver-%%DRIVERNAME%%/component', ['exports', 'ember', 'ui/mixins/driver'], function (exports, _ember, _uiMixinsDriver) {
+define('ui/components/node-driver/driver-%%DRIVERNAME%%/component', ['exports', 'ember', 'shared/components/node-driver/driver-%%DRIVERNAME%%/component'], function (exports, _ember, _component) {
+  exports['default'] = _component['default'];
+});
+
+define('shared/components/node-driver/driver-%%DRIVERNAME%%/component', ['exports', 'ember', 'shared/mixins/node-driver', 'shared/components/node-driver/driver-%%DRIVERNAME%%/template'], function (exports, _ember, _uiMixinsDriver, _template) {
+
+  var computed = Ember.computed;
+  var get = Ember.get;
+  var set = Ember.set;
+  var alias = Ember.computed.alias;
 
   exports['default'] = _ember['default'].Component.extend(_uiMixinsDriver['default'], {
+    layout: _template.default,
     driverName: '%%DRIVERNAME%%',
+    config: alias('model.%%DRIVERNAME%%Config'),
 /* ^--- And here */
 
     // Write your component here, starting with setting 'model' to a machine with your config populated
@@ -11,7 +22,7 @@ define('ui/components/machine/driver-%%DRIVERNAME%%/component', ['exports', 'emb
       let config = this.get('store').createRecord({
         type        : '%%DRIVERNAME%%Config',
         commercialType: 'VC1S',
-        region: '',
+        region: 'AMS1',
         name: '',
         debug: false,
         image: 'ubuntu-xenial',
